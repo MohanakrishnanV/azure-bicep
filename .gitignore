@@ -1,0 +1,24 @@
+# Ignore IDE and OS files
+.vscode/
+*.log
+*.DS_Store
+Thumbs.db
+
+# === Bicep build artifacts ===
+# These are compiled ARM templates; they can be recreated anytime.
+**/*.bicep.json
+**/*.bicep.params.json
+**/*.json
+
+# Ignore environment-specific parameter files
+*.parameters.json
+
+
+# Ignore secret parameter files
+*.secret.json
+*.secret.bicepparam
+*.bicepparam
+
+# === Azure DevOps-specific ===
+# If you use Azure CLI cache/config
+.azure/
